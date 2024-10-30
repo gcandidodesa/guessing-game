@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+body{
+  text-align: center;
+  background-color: #fff2a7;
+}
+
+h1{
+  border: solid #5fe2bb;
+  border-radius: 10px;
+  padding: 15px 20px;
+  display: inline-block;
+  background-color: #bfffec;
+  font-family: 'Pacifico', cursive;
+  color: #ff83c1;
+  font-weight: lighter;
+}
+
+p{
+  font-size: 20px;
+  font-family: "Quicksand", sans-serif;
+  color: #5e8ff7;
+  font-weight: bold;
+}
+
+input{
+  margin-bottom: 7px;
+  width: 300px;
+  height: 30px;
+  border-radius: 15px;
+  border-width: 1px;
+  background-color: #8181ff;
+  border: solid #7171fa;
+}
+
+button{
+  width: 300px;
+  height: 30px;
+  border-radius: 15px;
+  border-width: 1px;
+  border: solid #ffa0ae;
+  color: white;
+  background-color: #ffb6c1;
+  text-shadow: 1px 1px 2px #000;
+  font-family: "Quicksand", sans-serif;
+  font-size: 16px;
+}
+
+div{
+  background-color: rgba(212, 175, 255, 0.7);
+  padding: 10px;
+  border-radius: 10px;
+  margin: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.restart{
+  width: 200px;
+}
+
+.hardcore-label{
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+  font-family: "Quicksand", sans-serif;
+  font-size: 16px;
+  color: #FF6347;
+}
+
+.hardcore-checkbox{
+  width: 30px;
+}

@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Guessing Game</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="container">
+      <h1>Guessing Game</h1>
+      <p id="hardcore"></p>
+      <p id="desc">Guess a number between 1 and 100</p>
+      <input type="number" id="guess">
+      <br>
+      <button onclick="checkGuess()">Submit Guess</button>
+      <p id="feedback"></p>
+      <button class="restart" onclick="restartGame()">Restart game</button>
+
+      <label for="" class="hardcore-label">
+        <input type="checkbox" class="hardcore-checkbox" onclick="toggleHardcoreMode()">Modo Hardcore
+      </label>
+
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

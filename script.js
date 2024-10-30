@@ -8,7 +8,7 @@ const descElement = document.getElementById("desc");
 function toggleHardcoreMode(){
   hardcoreFeedbackElement.style.color = "#FF6347";
   hardcoreFeedbackElement.innerHTML = "Modo Hardcore ativado!";
-  descElement.innerHTML = "Guess a number between 1 and 9999999999";
+  descElement.innerHTML = "Adivinhe um número entre 1 e 9999999999";
   const checkbox = document.querySelector(".hardcore-checkbox");
   hardcoreMode = checkbox.checked;
   if(hardcoreMode){
@@ -18,7 +18,7 @@ function toggleHardcoreMode(){
     attempts = 10;
     randomNumber = Math.floor(Math.random() * 100) + 1;
     hardcoreFeedbackElement.innerHTML = "";
-    descElement.innerHTML = "Guess a number between 1 and 100";
+    descElement.innerHTML = "Adivinhe um número entre 1 e 100";
   }
   feedbackElement.innerHTML = "";
 }
@@ -30,22 +30,22 @@ function checkGuess() {
   while (attempts > 0) {
     if (guess == randomNumber) {
       attempts = 0;
-      feedbackElement.innerHTML = "Congratulations!";
+      feedbackElement.innerHTML = "Parabéns!";
       feedbackElement.style.color = "green";
       break;
     } else if (guess < randomNumber) {
-      feedbackElement.innerHTML = `Too low! Try again. ${attempts} attempts remaining.`;
+      feedbackElement.innerHTML = `Muito baixo! Tente novamente. ${attempts} tentativas sobrando.`;
       feedbackElement.style.color = "red";
       break;
     } else {
-      feedbackElement.innerHTML = `Too high! Try again. ${attempts} attempts remaining.`;
+      feedbackElement.innerHTML = `Muito alto! Tente novamente. ${attempts} tentativas sobrando.`;
       feedbackElement.style.color = "red";
       break;
     }
   }
   if(attempts == 0 && guess != randomNumber){
    feedbackElement.style.color = "red";
-   feedbackElement.innerHTML = "Game over! The correct number was: " + randomNumber;
+   feedbackElement.innerHTML = "Game over! O número correto era: " + randomNumber;
   }
 }
 
